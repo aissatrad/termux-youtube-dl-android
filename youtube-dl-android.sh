@@ -5,8 +5,9 @@
 termux-setup-storage;
 mkdir /data/data/com.termux/files/home/storage/shared/Youtube;
 mkdir ~/.config
-touch ~/.config/youtube-dl;
-echo '--no-mtime -o /data/data/com.termux/files/home/storage/shared/Youtube/%(title)s.%(ext)s -f "best[height<=720]"' > ~/.config/youtube-dl;
+mkdir ~/.config/youtube-dl;
+touch ~/.config/youtube-dl/config;
+echo '--no-mtime -o /data/data/com.termux/files/home/storage/shared/Youtube/%(title)s.%(ext)s -f "best[height<=720]"' > ~/.config/youtube-dl/config;
 mkdir ~/bin;
 #cd ~/bin
 #nano termux-url-opener
