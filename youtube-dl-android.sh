@@ -1,6 +1,6 @@
 #apt update && apt upgrade
 #apt install nano 
-pkg install python;
+pkg install python -y;
 echo "Python installed";
 pip install youtube-dl;
 echo "youtube-dl installed";
