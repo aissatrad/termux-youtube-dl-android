@@ -1,7 +1,7 @@
-#pkg update ;
-#pkg upgrade -y;
-#pkg install python -y;
-#pip install youtube-dl;
+pkg update ;
+pkg upgrade -y;
+pkg install python -y;
+pip install youtube-dl;
 termux-setup-storage;
 mkdir /data/data/com.termux/files/home/storage/shared/Youtube;
 mkdir ~/.config
