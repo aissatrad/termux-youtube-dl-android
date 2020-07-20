@@ -1,6 +1,6 @@
-apt update && apt upgrade
+#apt update && apt upgrade
 #apt install nano 
-apt install python
+pkg install python
 pip install youtube-dl
 termux-setup-storage
 mkdir /data/data/com.termux/files/home/storage/shared/Youtube
