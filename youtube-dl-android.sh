@@ -1,6 +1,6 @@
 pkg update
-pkg upgrade -y
-pkg install python -y
+pkg upgrade
+pkg install python
 pip install youtube-dl
 termux-setup-storage
 mkdir /data/data/com.termux/files/home/storage/shared/Youtube
