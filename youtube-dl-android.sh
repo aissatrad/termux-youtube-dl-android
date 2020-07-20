@@ -1,4 +1,4 @@
-wait pkg update ;
+pkg update ;
 wait pkg upgrade -y;
 wait pkg install python -y;
 wait pip install youtube-dl;
