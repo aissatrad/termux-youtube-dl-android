@@ -1,7 +1,7 @@
-apt update && apt upgrade -y
+apt update && apt upgrade
 
-#apt install nano -y
-apt install python -y
+#apt install nano 
+apt install python 
 pip install youtube-dl
 
 termux-setup-storage
