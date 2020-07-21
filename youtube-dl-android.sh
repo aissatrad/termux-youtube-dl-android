@@ -1,7 +1,7 @@
 pkg update
 pkg upgrade
-command -v python >/dev/null 2>&1 && isPythonInstalled=10
-if [ "$isPythonInstalled" -ne 10 ]
+command -v python >/dev/null 2>&1 && isPythonInstalled="10"
+if [ "$isPythonInstalled" -ne "10" ]
 then
 echo "Try to Install Python"
 pkg install python
