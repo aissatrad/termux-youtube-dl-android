@@ -32,8 +32,10 @@ fi
 echo '--no-mtime -o /data/data/com.termux/files/home/storage/shared/Youtube/%(title)s.%(ext)s -f "best[height<=720]"' > ~/.config/youtube-dl/config
 
 if [ -e "~/bin" ];then
-echo "~/bin Exists"
+    echo "~/bin Exists"
+    echo 'youtube-dl $1' > ~/bin/termux-url-opener
 else
     mkdir ~/bin
+    echo 'youtube-dl $1' > ~/bin/termux-url-opener
 fi
-echo 'youtube-dl $1' > ~/bin/termux-url-opener
+
