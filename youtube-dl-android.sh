@@ -1,13 +1,13 @@
 pkg update
 pkg upgrade
 command -v python >/dev/null 2>&1 && isPythonInstalled="10"
-if [ "$isPythonInstalled" -ne 10 ]
+if [ "$isPythonInstalled" ]
 then
-echo "Try to Install Python"
-pkg install python
+echo "Python Exists!"
 pip install youtube-dl
 else
-echo "Python Exists!"
+echo "Try to Install Python"
+pkg install python
 pip install youtube-dl
 fi
 termux-setup-storage
