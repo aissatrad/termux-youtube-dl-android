@@ -29,7 +29,8 @@ echo "~/.config/youtube-dl Exists"
 else
 mkdir ~/.config/youtube-dl
 fi
-echo '--no-mtime -o /data/data/com.termux/files/home/storage/shared/Youtube/%(title)s.%(ext)s -f "best[height<=720]"' > ~/.config/youtube-dl/config
+#echo '--no-mtime -o /data/data/com.termux/files/home/storage/shared/Youtube/%(title)s.%(ext)s -f "best[height<=720]"' > ~/.config/youtube-dl/config
+echo '--no-mtime -o /data/data/com.termux/files/home/storage/shared/Youtube/%(title)s.%(ext)s -f best' > ~/.config/youtube-dl/config
 if [ -e "~/bin" ]
 then
 echo "~/bin Exists"
